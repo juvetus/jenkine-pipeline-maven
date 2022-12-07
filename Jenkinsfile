@@ -4,7 +4,7 @@ pipeline {
     }
     agent {
         docker {
-            image "maven:3.8.6-jdk-19"
+            image "maven:3.8.6-jdk9"
         
             args "-v /tmp/maven:/var/maven/.m2 -e MAVEN_CONFIG=/var/maven/.m2"
         }
